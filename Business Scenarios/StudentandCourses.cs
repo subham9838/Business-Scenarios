@@ -50,6 +50,7 @@ namespace Business_Scenarios
             catch (Exception ex)
             {
                 tracingService.Trace("followingerror: {4}");
+                tracingService.Trace("followingerror: {5}");
                 throw new InvalidPluginExecutionException("Error occured", ex);
             }
         }

@@ -36,10 +36,11 @@ namespace Business_Scenarios
                 try
                 {
                     // Create a task activity to follow up with the account customer in 7 days.
+                    // Git testing
                     Entity follwUp = new Entity("task");
 
                     follwUp["subject"] = "Send e-mail to new customer";
-                    follwUp["description"] = "Follow up the customer";
+                    follwUp["description"] = "Follow up the customer reagarding appointment";
                     follwUp["scheduledstart"] = DateTime.Now.AddDays(7);
                     follwUp["scheduledend"] = DateTime.Now.AddDays(7);
                     follwUp["category"] = context.PrimaryEntityName;
